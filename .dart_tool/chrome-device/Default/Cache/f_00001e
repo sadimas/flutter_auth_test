@@ -1,0 +1,1080 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter_auth_test/utils/authencation.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/material/text_field.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/input_border.dart', 'packages/flutter/src/painting/borders.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/icon_theme.dart', 'packages/flutter/src/widgets/icon_theme_data.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/elevated_button.dart', 'packages/flutter/src/material/icons.dart', 'packages/fluttertoast/fluttertoast.dart', 'packages/flutter/src/painting/strut_style.dart'], (function load__packages__flutter_auth_test__screens__auth_page_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter_auth_test__utils__authencation$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__material__text_field$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__input_border$46dart, packages__flutter__src__painting__borders$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__icon_theme$46dart, packages__flutter__src__widgets__icon_theme_data$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__elevated_button$46dart, packages__flutter__src__material__icons$46dart, packages__fluttertoast__fluttertoast$46dart, packages__flutter__src__painting__strut_style$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _internal = dart_sdk._internal;
+  const _interceptors = dart_sdk._interceptors;
+  const async = dart_sdk.async;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const editable_text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__editable_text;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const text$ = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const gesture_detector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__gesture_detector;
+  const authencation = packages__flutter_auth_test__utils__authencation$46dart.utils__authencation;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const text_field = packages__flutter__src__material__text_field$46dart.src__material__text_field;
+  const input_decorator = packages__flutter__src__material__icon_button$46dart.src__material__input_decorator;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const input_border = packages__flutter__src__material__input_border$46dart.src__material__input_border;
+  const borders = packages__flutter__src__painting__borders$46dart.src__painting__borders;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const icon_theme = packages__flutter__src__widgets__icon_theme$46dart.src__widgets__icon_theme;
+  const icon_theme_data = packages__flutter__src__widgets__icon_theme_data$46dart.src__widgets__icon_theme_data;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const elevated_button = packages__flutter__src__material__elevated_button$46dart.src__material__elevated_button;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const fluttertoast = packages__fluttertoast__fluttertoast$46dart.fluttertoast;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  var auth_page = Object.create(dart.library);
+  var $isEmpty = dartx.isEmpty;
+  var $trimLeft = dartx.trimLeft;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    IconAndStringAndTextEditingController__ToWidget: () => (T.IconAndStringAndTextEditingController__ToWidget = dart.constFn(dart.fnType(framework.Widget, [icon.Icon, core.String, editable_text.TextEditingController, core.bool])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    StringAndFnToWidget: () => (T.StringAndFnToWidget = dart.constFn(dart.fnType(framework.Widget, [core.String, T.VoidTovoid()])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 20,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 20
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 19,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3, C[4] || CT.C4], widget_inspector._Location);
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 17,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.constList([C[7] || CT.C7, C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[6] || CT.C6,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "obscureText",
+        [_Location_column]: 11,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 11,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 11,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 23,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20], widget_inspector._Location);
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 55,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 11,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23, C[24] || CT.C24], widget_inspector._Location);
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 25,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 10,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 37,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28], widget_inspector._Location);
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31, C[32] || CT.C32], widget_inspector._Location);
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 62,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 25,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.constList([C[36] || CT.C36], widget_inspector._Location);
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[35] || CT.C35,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 70,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 67,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 22,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 25,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 25
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 19,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 19,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47, C[48] || CT.C48, C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 17,
+        [_Location_line]: 74,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52, C[53] || CT.C53], widget_inspector._Location);
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 73,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.constList([C[56] || CT.C56], widget_inspector._Location);
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[55] || CT.C55,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.constList([C[59] || CT.C59], widget_inspector._Location);
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[58] || CT.C58,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 30,
+        [EdgeInsets_right]: 20,
+        [EdgeInsets_top]: 50,
+        [EdgeInsets_left]: 20
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 139,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.constList([C[63] || CT.C63, C[64] || CT.C64], widget_inspector._Location);
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[62] || CT.C62,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 137,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 137,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67], widget_inspector._Location);
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 136,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 135,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 136,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70, C[71] || CT.C71], widget_inspector._Location);
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 134,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 15,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 37,
+        [_Location_line]: 149,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.constList([C[75] || CT.C75], widget_inspector._Location);
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[74] || CT.C74,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 149,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 25,
+        [_Location_line]: 149,
+        [_Location_file]: null
+      });
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 25,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.constList([C[78] || CT.C78, C[79] || CT.C79], widget_inspector._Location);
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[77] || CT.C77,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 148,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 23,
+        [_Location_line]: 147,
+        [_Location_file]: null
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 148,
+        [_Location_file]: null
+      });
+    },
+    get C81() {
+      return C[81] = dart.constList([C[82] || CT.C82, C[83] || CT.C83], widget_inspector._Location);
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[81] || CT.C81,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 146,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 144,
+        [_Location_file]: null
+      });
+    },
+    get C85() {
+      return C[85] = dart.constList([C[86] || CT.C86], widget_inspector._Location);
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[85] || CT.C85,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 143,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 37,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C88() {
+      return C[88] = dart.constList([C[89] || CT.C89], widget_inspector._Location);
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[88] || CT.C88,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 165,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 25,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 25,
+        [_Location_line]: 166,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.constList([C[92] || CT.C92, C[93] || CT.C93], widget_inspector._Location);
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[91] || CT.C91,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 164,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 23,
+        [_Location_line]: 163,
+        [_Location_file]: null
+      });
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.constList([C[96] || CT.C96, C[97] || CT.C97], widget_inspector._Location);
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[95] || CT.C95,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 162,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 160,
+        [_Location_file]: null
+      });
+    },
+    get C99() {
+      return C[99] = dart.constList([C[100] || CT.C100], widget_inspector._Location);
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[99] || CT.C99,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 159,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 22,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C102() {
+      return C[102] = dart.constList([C[103] || CT.C103], widget_inspector._Location);
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[102] || CT.C102,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 133,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 132,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 9,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C105() {
+      return C[105] = dart.constList([C[106] || CT.C106, C[107] || CT.C107], widget_inspector._Location);
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[105] || CT.C105,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 131,
+        [_Location_file]: "file:///D:/StudioProjects/flutter_auth_test/lib/screens/auth_page.dart"
+      });
+    }
+  }, false);
+  var C = Array(108).fill(void 0);
+  var I = ["package:flutter_auth_test/screens/auth_page.dart"];
+  auth_page.AuthPage = class AuthPage extends framework.StatefulWidget {
+    createState() {
+      return new auth_page._AuthPageState.new();
+    }
+  };
+  (auth_page.AuthPage.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    auth_page.AuthPage.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = auth_page.AuthPage.prototype;
+  dart.addTypeTests(auth_page.AuthPage);
+  dart.addTypeCaches(auth_page.AuthPage);
+  dart.setMethodSignature(auth_page.AuthPage, () => ({
+    __proto__: dart.getMethods(auth_page.AuthPage.__proto__),
+    createState: dart.fnType(auth_page._AuthPageState, [])
+  }));
+  dart.setLibraryUri(auth_page.AuthPage, I[0]);
+  var _emailController = dart.privateName(auth_page, "_emailController");
+  var _passwordController = dart.privateName(auth_page, "_passwordController");
+  var ___AuthPageState__password = dart.privateName(auth_page, "_#_AuthPageState#_password");
+  var ___AuthPageState__email = dart.privateName(auth_page, "_#_AuthPageState#_email");
+  var _authUtil = dart.privateName(auth_page, "_authUtil");
+  var _password = dart.privateName(auth_page, "_password");
+  var _email = dart.privateName(auth_page, "_email");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  auth_page._AuthPageState = class _AuthPageState extends framework.State$(auth_page.AuthPage) {
+    get [_password]() {
+      let t0;
+      t0 = this[___AuthPageState__password];
+      return t0 == null ? dart.throw(new _internal.LateError.fieldNI("_password")) : t0;
+    }
+    set [_password](t0) {
+      this[___AuthPageState__password] = t0;
+    }
+    get [_email]() {
+      let t1;
+      t1 = this[___AuthPageState__email];
+      return t1 == null ? dart.throw(new _internal.LateError.fieldNI("_email")) : t1;
+    }
+    set [_email](t1) {
+      this[___AuthPageState__email] = t1;
+    }
+    build(context) {
+      function _input(icon, hint, controller, obscureText) {
+        return new container.Container.new({padding: C[0] || CT.C0, child: new text_field.TextField.new({obscureText: obscureText, controller: controller, decoration: new input_decorator.InputDecoration.new({hintText: hint, focusedBorder: new input_border.OutlineInputBorder.new({borderSide: new borders.BorderSide.new({color: colors.Colors.white, width: 3.0})}), enabledBorder: new input_border.OutlineInputBorder.new({borderSide: new borders.BorderSide.new({color: colors.Colors.white70, width: 1.0})}), prefixIcon: new basic.Padding.new({padding: new edge_insets.EdgeInsets.only({left: 8.0, right: 8.0}), child: new icon_theme.IconTheme.new({data: new icon_theme_data.IconThemeData.new({color: colors.Colors.white}), child: icon, $creationLocationd_0dea112b090073317d4: C[1] || CT.C1}), $creationLocationd_0dea112b090073317d4: C[5] || CT.C5})}), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14});
+      }
+      dart.fn(_input, T.IconAndStringAndTextEditingController__ToWidget());
+      function _btn(text, func) {
+        return new elevated_button.ElevatedButton.new({onPressed: dart.fn(() => {
+            func();
+          }, T.VoidTovoid()), child: new text$.Text.new(text, {$creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), $creationLocationd_0dea112b090073317d4: C[21] || CT.C21});
+      }
+      dart.fn(_btn, T.StringAndFnToWidget());
+      const _regForm = (label, func) => {
+        return new container.Container.new({child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Padding.new({padding: C[25] || CT.C25, child: _input(new icon.Icon.new(icons.Icons.email, {$creationLocationd_0dea112b090073317d4: C[26] || CT.C26}), "EMAIL", this[_emailController], false), $creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), new basic.Padding.new({padding: C[33] || CT.C33, child: _input(new icon.Icon.new(icons.Icons.lock, {$creationLocationd_0dea112b090073317d4: C[34] || CT.C34}), "PASSWORD", this[_passwordController], true), $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), new basic.SizedBox.new({height: 25.0, $creationLocationd_0dea112b090073317d4: C[41] || CT.C41}), new basic.Padding.new({padding: C[44] || CT.C44, child: new container.Container.new({height: 50.0, width: 300.0, child: _btn(label, func), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), $creationLocationd_0dea112b090073317d4: C[50] || CT.C50})]), $creationLocationd_0dea112b090073317d4: C[54] || CT.C54}), $creationLocationd_0dea112b090073317d4: C[57] || CT.C57});
+      };
+      dart.fn(_regForm, T.StringAndFnToWidget());
+      const _signInButtonClick = () => {
+        return async.async(dart.void, (function* _signInButtonClick() {
+          this[_password] = this[_passwordController].text;
+          this[_email] = this[_emailController].text;
+          if (this[_email][$isEmpty] || this[_password][$isEmpty]) return;
+          let user = (yield this[_authUtil].signInWithEmailAndPassword(this[_email][$trimLeft](), this[_password][$trimLeft]()));
+          if (user == null) {
+            fluttertoast.Fluttertoast.showToast({msg: "Something wrong! Please, check Email or Password", toastLength: fluttertoast.Toast.LENGTH_SHORT, gravity: fluttertoast.ToastGravity.CENTER, timeInSecForIosWeb: 1, backgroundColor: colors.Colors.red, textColor: colors.Colors.white, fontSize: 16.0});
+          } else {
+            this[_passwordController].clear();
+            this[_emailController].clear();
+          }
+        }).bind(this));
+      };
+      dart.fn(_signInButtonClick, T.VoidTovoid());
+      const _signUpButtonClick = () => {
+        return async.async(dart.void, (function* _signUpButtonClick() {
+          this[_password] = this[_passwordController].text;
+          this[_email] = this[_emailController].text;
+          if (this[_email][$isEmpty] || this[_password][$isEmpty]) return;
+          let user = (yield this[_authUtil].signUpWithEmailAndPassword(this[_email][$trimLeft](), this[_password][$trimLeft]()));
+          if (user == null) {
+            fluttertoast.Fluttertoast.showToast({msg: "Can't registration! Please, check Email or Password", toastLength: fluttertoast.Toast.LENGTH_SHORT, gravity: fluttertoast.ToastGravity.CENTER, timeInSecForIosWeb: 1, backgroundColor: colors.Colors.red, textColor: colors.Colors.white, fontSize: 16.0});
+          } else {
+            this[_passwordController].clear();
+            this[_emailController].clear();
+          }
+        }).bind(this));
+      };
+      dart.fn(_signUpButtonClick, T.VoidTovoid());
+      return new scaffold.Scaffold.new({backgroundColor: theme.Theme.of(context).primaryColorLight, body: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Padding.new({padding: C[60] || CT.C60, child: new basic.Center.new({child: new text$.Text.new("Registration Form", {style: new text_style.TextStyle.new({fontSize: 30.0, color: colors.Colors.white}), $creationLocationd_0dea112b090073317d4: C[61] || CT.C61}), $creationLocationd_0dea112b090073317d4: C[65] || CT.C65}), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68}), !this.showRegister ? new basic.Column.new({children: T.JSArrayOfWidget().of([_regForm("SIGN IN", _signInButtonClick), new basic.Padding.new({padding: C[72] || CT.C72, child: new gesture_detector.GestureDetector.new({child: new text$.Text.new("If you haven't an account, SIGN UP!", {$creationLocationd_0dea112b090073317d4: C[73] || CT.C73}), onTap: dart.fn(() => {
+                      this.setState(dart.fn(() => {
+                        this.showRegister = true;
+                      }, T.VoidTovoid()));
+                    }, T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[76] || CT.C76}), $creationLocationd_0dea112b090073317d4: C[80] || CT.C80})]), $creationLocationd_0dea112b090073317d4: C[84] || CT.C84}) : new basic.Column.new({children: T.JSArrayOfWidget().of([_regForm("SIGN UP", _signUpButtonClick), new basic.Padding.new({padding: C[72] || CT.C72, child: new gesture_detector.GestureDetector.new({child: new text$.Text.new("Have an account? SIGN IN!", {$creationLocationd_0dea112b090073317d4: C[87] || CT.C87}), onTap: dart.fn(() => {
+                      this.setState(dart.fn(() => {
+                        this.showRegister = false;
+                      }, T.VoidTovoid()));
+                    }, T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[90] || CT.C90}), $creationLocationd_0dea112b090073317d4: C[94] || CT.C94})]), $creationLocationd_0dea112b090073317d4: C[98] || CT.C98})]), $creationLocationd_0dea112b090073317d4: C[101] || CT.C101}), $creationLocationd_0dea112b090073317d4: C[104] || CT.C104});
+    }
+  };
+  (auth_page._AuthPageState.new = function() {
+    this[_emailController] = new editable_text.TextEditingController.new();
+    this[_passwordController] = new editable_text.TextEditingController.new();
+    this[___AuthPageState__password] = null;
+    this[___AuthPageState__email] = null;
+    this.showRegister = false;
+    this[_authUtil] = new authencation.AuthUtil.new();
+    auth_page._AuthPageState.__proto__.new.call(this);
+    ;
+  }).prototype = auth_page._AuthPageState.prototype;
+  dart.addTypeTests(auth_page._AuthPageState);
+  dart.addTypeCaches(auth_page._AuthPageState);
+  dart.setMethodSignature(auth_page._AuthPageState, () => ({
+    __proto__: dart.getMethods(auth_page._AuthPageState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setGetterSignature(auth_page._AuthPageState, () => ({
+    __proto__: dart.getGetters(auth_page._AuthPageState.__proto__),
+    [_password]: core.String,
+    [_email]: core.String
+  }));
+  dart.setSetterSignature(auth_page._AuthPageState, () => ({
+    __proto__: dart.getSetters(auth_page._AuthPageState.__proto__),
+    [_password]: core.String,
+    [_email]: core.String
+  }));
+  dart.setLibraryUri(auth_page._AuthPageState, I[0]);
+  dart.setFieldSignature(auth_page._AuthPageState, () => ({
+    __proto__: dart.getFields(auth_page._AuthPageState.__proto__),
+    [_emailController]: dart.fieldType(editable_text.TextEditingController),
+    [_passwordController]: dart.fieldType(editable_text.TextEditingController),
+    [___AuthPageState__password]: dart.fieldType(dart.nullable(core.String)),
+    [___AuthPageState__email]: dart.fieldType(dart.nullable(core.String)),
+    showRegister: dart.fieldType(core.bool),
+    [_authUtil]: dart.fieldType(authencation.AuthUtil)
+  }));
+  dart.trackLibraries("packages/flutter_auth_test/screens/auth_page.dart", {
+    "package:flutter_auth_test/screens/auth_page.dart": auth_page
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["auth_page.dart"],"names":[],"mappings":"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","file":"../../../../packages/flutter_auth_test/screens/auth_page.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__auth_page: auth_page
+  };
+}));
+
+//# sourceMappingURL=auth_page.dart.lib.js.map
