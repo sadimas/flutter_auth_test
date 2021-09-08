@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 class CurrentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final AuthUser user = Provider.of<AuthUser>(context);
+    final AuthUser? user = Provider.of<AuthUser?>(context);
     final bool isSignIn = user != null;
 
     return isSignIn ? HomePage() : AuthPage();
